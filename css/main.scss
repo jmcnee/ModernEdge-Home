@@ -12,6 +12,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -19,11 +22,11 @@ body {
     display: grid;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: 1fr;
-    height: 100vh;
+    height: 80vh;
 }
 
 .fade1, .fade2, .fade3 {
-    // removing the color rows from the screen to start
+    // removing the color rows from the screen to start by setting scaleY(0)
     transform: scaleY(0);
     transform-origin: top;
 }
@@ -48,4 +51,10 @@ h1 {
     z-index: 1;
     //  placing H1 off screen to start
     transform: translateX(-150%);
+}
+
+.reveal {
+    background-color: rebeccapurple;
+    opacity: 0;
+    height: 1px;
 }

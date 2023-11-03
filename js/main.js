@@ -56,6 +56,29 @@ const tl = gsap.timeline({
             scale: .6
         }, "-=.5")
 
+        .to('.fade2', {
+            scaleY: 0
+        }, "-=.5")
+
+        .to('.reveal', {
+            opacity: 1,
+            duration: 3,
+            height: '120vh',
+            y: -1000
+        })
+        
+        .to('h1', {
+            opacity: 0,
+            duration: 1.6
+        })
+
+        .to('h2', {
+            fontSize: 60,
+            duration: 2
+        })
+
+        
+
 
 
 

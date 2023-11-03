@@ -12,13 +12,23 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fade-container {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr;
-  height: 100vh;
+  height: 80vh;
 }
 
 .fade1, .fade2, .fade3 {
@@ -50,4 +60,10 @@ h1 {
   z-index: 1;
   -webkit-transform: translateX(-150%);
           transform: translateX(-150%);
+}
+
+.reveal {
+  background-color: rebeccapurple;
+  opacity: 0;
+  height: 1px;
 }
