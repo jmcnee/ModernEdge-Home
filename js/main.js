@@ -63,7 +63,7 @@ const tl = gsap.timeline({
         .to('.reveal', {
             opacity: 1,
             duration: 3,
-            height: '120vh',
+            height: '1400px',
             y: -1000
         })
         
