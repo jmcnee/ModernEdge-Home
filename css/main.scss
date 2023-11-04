@@ -2,6 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     color: white;
+    // background-color: #222222;
 }
 
 .mask {
@@ -58,4 +59,15 @@ h1 {
     background-color: rebeccapurple;
     opacity: 0;
     height: 1px;
+}
+
+.content {
+    padding: 0 6em;
+}
+.lorem {
+    color: rebeccapurple;
+    opacity: 0;
+    
+    text-align: center;
+    transform: translateX(-100%);
 }

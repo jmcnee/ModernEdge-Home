@@ -65,17 +65,43 @@ const tl = gsap.timeline({
             duration: 3,
             height: '1400px',
             y: -1000
-        })
+        }, "-=1")
         
         .to('h1', {
             opacity: 0,
             duration: 1.6
-        })
+        }, "-=.5")
 
         .to('h2', {
-            fontSize: 60,
+            scale: 40,
+            duration: 2,
+            opacity: 0
+        }, "-=.5")
+
+        .to('.reveal', {
+            height: '1px'
+        })
+
+        .to('.lorem', {
+            opacity: 1,
+            color: "black",
+            scale: 1.03,
+            x: 0,
             duration: 2
         })
+
+        .to("body", { 
+            
+            backgroundColor: "#000",
+            duration: 4,
+            
+        })
+
+        .to('.lorem', {
+            color: '#bebebe',
+            duration: 7,
+            scale: 1.2
+        }, "-=3")
 
         
 
